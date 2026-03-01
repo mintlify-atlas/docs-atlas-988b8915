@@ -1,0 +1,177 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "ZenML MCP Server",
+  "projectDescription": "MCP server to connect AI clients with ZenML MLOps and LLMOps pipelines",
+  "theme": "aspen",
+  "primaryColor": "#431D93",
+  "lightColor": "#9B51E0",
+  "darkColor": "#2A0E5C",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Installation",
+            "pages": [
+              "installation/overview",
+              "installation/claude-desktop",
+              "installation/cursor",
+              "installation/docker",
+              "installation/mcp-bundles"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/what-is-mcp",
+              "concepts/what-is-zenml",
+              "concepts/architecture"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/configuration",
+              "guides/debugging",
+              "guides/mcp-apps",
+              "guides/analytics-privacy"
+            ]
+          },
+          {
+            "group": "Migration",
+            "pages": [
+              "migration/run-templates-to-snapshots"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview"
+            ]
+          },
+          {
+            "group": "Pipeline Execution",
+            "pages": [
+              "api/pipeline-execution/snapshots",
+              "api/pipeline-execution/deployments",
+              "api/pipeline-execution/trigger-pipeline"
+            ]
+          },
+          {
+            "group": "Organization",
+            "pages": [
+              "api/organization/projects",
+              "api/organization/tags",
+              "api/organization/builds"
+            ]
+          },
+          {
+            "group": "Core Entities",
+            "pages": [
+              "api/core/users",
+              "api/core/stacks",
+              "api/core/stack-components",
+              "api/core/flavors",
+              "api/core/service-connectors",
+              "api/core/pipelines",
+              "api/core/pipeline-runs",
+              "api/core/run-steps",
+              "api/core/schedules",
+              "api/core/artifacts",
+              "api/core/secrets",
+              "api/core/services",
+              "api/core/models"
+            ]
+          },
+          {
+            "group": "Analysis Tools",
+            "pages": [
+              "api/analysis/stack-components-analysis",
+              "api/analysis/recent-runs-analysis"
+            ]
+          },
+          {
+            "group": "Interactive Apps",
+            "pages": [
+              "api/apps/pipeline-run-dashboard",
+              "api/apps/run-activity-chart"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "40+ MCP tools for accessing ZenML entities (users, stacks, pipelines, runs, artifacts, models)",
+    "Trigger pipeline runs from AI clients using snapshots or templates",
+    "Access deployment status, logs, and runtime information",
+    "Interactive MCP Apps for visualizing pipeline runs and activity charts",
+    "Multiple deployment options: stdio, Docker, MCP bundles",
+    "Published on Anthropic MCP Registry for easy discovery",
+    "Privacy-focused analytics with opt-out support"
+  ],
+  "publicApiSurface": [
+    "get_snapshot",
+    "list_snapshots",
+    "get_deployment",
+    "list_deployments",
+    "get_deployment_logs",
+    "trigger_pipeline",
+    "get_active_project",
+    "get_project",
+    "list_projects",
+    "get_tag",
+    "list_tags",
+    "get_build",
+    "list_builds",
+    "get_user",
+    "list_users",
+    "get_active_user",
+    "get_stack",
+    "list_stacks",
+    "get_stack_component",
+    "list_stack_components",
+    "get_flavor",
+    "list_flavors",
+    "get_service_connector",
+    "list_service_connectors",
+    "get_pipeline_run",
+    "list_pipeline_runs",
+    "get_run_step",
+    "list_run_steps",
+    "get_step_logs",
+    "get_step_code",
+    "list_pipelines",
+    "get_pipeline_details",
+    "get_schedule",
+    "list_schedules",
+    "list_artifacts",
+    "get_artifact_version",
+    "list_artifact_versions",
+    "list_secrets",
+    "get_service",
+    "list_services",
+    "get_model",
+    "list_models",
+    "get_model_version",
+    "list_model_versions",
+    "open_pipeline_run_dashboard",
+    "open_run_activity_chart",
+    "stack_components_analysis",
+    "recent_runs_analysis",
+    "most_recent_runs"
+  ]
+}
